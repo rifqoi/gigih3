@@ -68,7 +68,6 @@ class Video {
 		try {
 			const video = await this.deleteOne({ _id: id })
 			if (video.deletedCount != 1) {
-				console.log("sini?", video)
 				throw new RepositoryError("Cannot delete video: ID not found!")
 			}
 
@@ -87,3 +86,4 @@ class Video {
 const VideoModel = getModelForClass(Video)
 
 export default VideoModel
+export { Video }

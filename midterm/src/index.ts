@@ -2,6 +2,8 @@ import express, { Request, Response } from "express"
 import VideoController from "./videos/controller"
 import mongoose from "mongoose"
 import logger from "pino-http"
+import ProductModel from "./products/product"
+import ProductController from "./products/controller"
 
 const app = express()
 
@@ -14,8 +16,10 @@ app.use(
 )
 
 const videoController = new VideoController()
+const productController = new ProductController()
 
 app.use("/", videoController.router)
+app.use("/", productController.router)
 
 const port = 8000
 
