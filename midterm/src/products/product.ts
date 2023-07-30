@@ -9,9 +9,10 @@ import {
 } from "@typegoose/typegoose"
 import { Video } from "../videos/videos"
 import { RepositoryError, UnknownError } from "../error"
+import { TimeStamps } from "@typegoose/typegoose/lib/defaultClasses"
 
 @plugin(AutoIncrementID, { startAt: 1 })
-class Product {
+class Product extends TimeStamps {
 	@prop({ type: Number })
 	public _id!: number
 

@@ -68,7 +68,7 @@ class CommentController {
 				const comment: CommentResponse = {
 					comment: value.comment,
 					username: value.username,
-					timestamp: value.timestamp,
+					timestamp: value.timestamps,
 				}
 
 				comments.push(comment)
