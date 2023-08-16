@@ -65,3 +65,5 @@ const start = async (): Promise<void> => {
 }
 
 void start()
+
+export default app
