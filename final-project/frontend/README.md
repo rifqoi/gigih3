@@ -1,27 +1,16 @@
-# React + TypeScript + Vite
+# Tokopedia Play
+This is the frontend page of tokopedia play intended for Generasi GIGIH 3 final project. Check out the backend for this project on [here](https://github.com/rifqoi/gigih3/tree/main/final-project/backend).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Deployment
+The app deployed on vercel, you can check it out here https://gigih3-frontend.vercel.app/.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Run Locally
+To run the project locally, follow these steps:
+1. Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
+2. Clone or download this repository to your local machine.
+3. Open a terminal and navigate to the project directory.
+4. Copy .env.example to .env `cp .env.example .env`
+5. Start the server by running the following command:
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm run dev
+```
