@@ -1,5 +1,6 @@
 {
   "devCommand": "npm start",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "builds": [
     {
       "src": "src/index.ts",
