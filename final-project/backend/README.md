@@ -1,5 +1,8 @@
 # Mid Term Gigih Backend Project
 
+
+## Live Deployment
+The API Server are deployed on Vercel that can be accessed with the following link https://gigih3-gy95.vercel.app/videos
 ## Database Schema
 Database: `tokopedia-play`
 
